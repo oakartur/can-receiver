@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAIN_CAN_WATCHDOG_H
+#define MAIN_CAN_WATCHDOG_H
 #include <stdint.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/semphr.h"
@@ -23,3 +24,5 @@ typedef struct {
 } can_watchdog_cfg_t;
 
 void can_watchdog_start(const can_watchdog_cfg_t *cfg);
+
+#endif  // MAIN_CAN_WATCHDOG_H

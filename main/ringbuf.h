@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAIN_RINGBUF_H
+#define MAIN_RINGBUF_H
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
@@ -16,3 +17,5 @@ void ringbuf_free(ringbuf_t *rb);
 bool ringbuf_push(ringbuf_t *rb, const void *elem);
 size_t ringbuf_count(const ringbuf_t *rb);
 bool ringbuf_get_latest(const ringbuf_t *rb, void *out_elem);
+
+#endif  // MAIN_RINGBUF_H
