@@ -1,4 +1,5 @@
-#pragma once
+#ifndef COMPONENTS_MCP2515_MCP2515_H
+#define COMPONENTS_MCP2515_MCP2515_H
 #include <stdint.h>
 #include <stdbool.h>
 #include "driver/spi_master.h"
@@ -43,3 +44,5 @@ bool    mcp2515_recover_reinit(void);
 
 // Timestamp de última recepção (ms desde boot)
 uint32_t mcp2515_last_rx_ms(void);
+
+#endif  // COMPONENTS_MCP2515_MCP2515_H

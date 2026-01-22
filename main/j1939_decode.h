@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAIN_J1939_DECODE_H
+#define MAIN_J1939_DECODE_H
 #include <stdbool.h>
 #include <stdint.h>
 #include "freertos/FreeRTOS.h"
@@ -15,3 +16,5 @@ typedef struct {
 } generator_state_t;
 
 void j1939_decode_start(QueueHandle_t in_q, generator_state_t *state, SemaphoreHandle_t state_mtx);
+
+#endif  // MAIN_J1939_DECODE_H
