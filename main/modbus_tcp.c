@@ -5,6 +5,7 @@
 #include <string.h>
 #include <errno.h>
 #include <math.h>
+#include "freertos/task.h"
 
 static const char *TAG = "modbus_tcp";
 
